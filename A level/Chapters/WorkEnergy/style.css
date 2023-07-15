@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+body{
+    flex-direction: column;
+    display:flex;
+    background: linear-gradient(#001833,#0a0c22, #010024);
+
+}
+body a{
+    text-decoration: none;
+}
+.logo{
+    margin:30px
+}
+.logo h1{
+    background: linear-gradient(to right, #d400ff, #ff0015);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    margin:30px
+}
+.logo h1{
+    background: linear-gradient(to right, #d400ff, #ff0015);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.chapters{
+    width: 30%;
+    padding: 3%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.chapters h1{
+    color: var(--clr);
+}
+.active{
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--clr) !important;
+    background: #10345c;
+}
+
+.chapters h3{
+    padding: 3px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
+.chapters h3:hover{
+    cursor: pointer;
+    color: var(--clr);
+    transform: translateX(10px);
+}
+.chapters hr{
+    color: var(--clr)
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #10345c;
+    min-height: 50px;
+}
+footer p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.infor{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 60px;
+}
+.infor h1{
+    font-size: 50px;
+}
+.infor p{
+    font-size: 20px;
+}
+.infor ul li{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.highlight{
+    color: #690ed0;
+}
+.question{
+    display: flex;
+    flex-direction: row;
+}
+.question ion-icon{
+    color: #fc5f9b;
+    margin: 3px;
+    font-size: 5em;
+    font-weight:900;
+}
+.next-topic {
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    transform: translateX(0);
+    color: #690ed0;
+
+}
+.prev-topic {
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    transform: translateX(0);
+    color: #fc5f9b;
+
+}
+.next-topic:hover {
+    transform: translateX(+20px);
+}
+.prev-topic:hover {
+    transform: translateX(-20px);
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
